@@ -11,6 +11,9 @@
     <ul>
       <% dogs.forEach((dog) => { %>
       <li><%= dog.name %> <%= dog.breed %></li>
+      <ul>
+        <li><%= dog.childFriendly %></li>
+      </ul>
       <% }) %>
     </ul>
   </body>

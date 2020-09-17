@@ -7,7 +7,8 @@ module.exports = () => {
     return res.render("example", {
       title: "EJS Example",
       message: "Hello Template",
-      myHeading: "This is my Heading"
+      myHeading: "This is my Heading",
+      newVar: "This is a new var"
     });
   });
 
@@ -17,7 +18,8 @@ module.exports = () => {
     var dogJson = [
       { name: "Fido", breed: "Border Terrier", childFriendly: true },
       { name: "Butch", breed: "Poodle", childFriendly: true },
-      { name: "Patch", breed: "Poodle", childFriendly: false }
+      { name: "Patch", breed: "Poodle", childFriendly: false },
+      { name: "Sketch", breed: "Labradoodle", childFriendly:true}
     ];
 
     return res.render("dogs-loop", {
